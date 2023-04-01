@@ -3,7 +3,7 @@
 # Egg Timer
 
 
-In this project I will try to make an Egg Timer. Project description and new technologies that I will first use is stated below. 
+A note from Ufuk: In this project I will try to make an Egg Timer. Project description and new technologies that I will first use is stated below. 
 
 ## Our Goal
 
