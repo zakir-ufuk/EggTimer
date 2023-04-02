@@ -29,12 +29,32 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skw-1y-aeB">
+                                                <rect key="frame" x="128.5" y="190.5" width="117" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Stop Timer !" titleAlignment="automatic">
+                                                    <color key="baseForegroundColor" red="0.77254903320000001" green="0.68627452850000004" blue="0.42352938649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ot-zT-0gN"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bc-wV-akD">
+                                                <rect key="frame" x="117" y="185" width="141" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="XLm-5r-pSP" firstAttribute="leading" secondItem="9S4-l0-41N" secondAttribute="leading" id="6V5-9S-ChY"/>
                                             <constraint firstAttribute="bottom" secondItem="XLm-5r-pSP" secondAttribute="bottom" id="OKF-nB-MRE"/>
+                                            <constraint firstItem="Skw-1y-aeB" firstAttribute="centerX" secondItem="XLm-5r-pSP" secondAttribute="centerX" id="tA5-oh-nZg"/>
                                             <constraint firstItem="XLm-5r-pSP" firstAttribute="top" secondItem="9S4-l0-41N" secondAttribute="top" id="uBu-O3-A6x"/>
                                             <constraint firstAttribute="trailing" secondItem="XLm-5r-pSP" secondAttribute="trailing" id="yP9-jE-EGL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Skw-1y-aeB" secondAttribute="bottom" constant="20.5" id="ycB-2p-gAu"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wAa-qa-eeB" userLabel="Egg Stack View">
@@ -152,6 +172,8 @@
                     </view>
                     <connections>
                         <outlet property="progressBar" destination="GaK-mv-Uy5" id="92h-Yb-EON"/>
+                        <outlet property="stopTimerButton" destination="Skw-1y-aeB" id="nOi-10-9Pf"/>
+                        <outlet property="timeLeft" destination="6bc-wV-akD" id="v9O-gC-8LP"/>
                         <outlet property="titleLabel" destination="XLm-5r-pSP" id="4sw-Vw-P6g"/>
                     </connections>
                 </viewController>
