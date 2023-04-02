@@ -1,9 +1,15 @@
 ![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
 # Egg Timer
+## A note from Zakir Ufuk (Please Read);  
 
+In this project I will try to make an Egg Timer. Project description and new technologies that I will first use is stated below. 
 
-A note from Ufuk: In this project I will try to make an Egg Timer. Project description and new technologies that I will first use is stated below. 
+Now that I have finished the project, I would like to edit this. I wrote that I will use the technologies below (in original readme.md file) but I am happy to say that I have used more funtions/technologies then expected, with the last commit I have added more features to the project. Extra things that I have added stated below. It took a lot of time and effort but I have learned a lot from it! 
+* digital timer to display remaining time after user selects egg hardness
+* stop button to stop alarm when eggs are ready (which also resets every setting (progress bar, variables, timer etc) and return backs to starting point)
+* flash effect which turns on when the eggs are ready 
+* different labels for before choosing egg hardness , when egg is cooking, when egg is ready time periods 
 
 ## Our Goal
 
